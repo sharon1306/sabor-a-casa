@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recetas | Sabor a casa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- Navbar igual que en index -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button class="btn btn-outline-secondary me-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuCategorias" aria-controls="menuCategorias">
+      ☰ Categorías
+    </button>
+
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/logo.png" alt="Logo" width="30" height="30" class="me-2">
+      Sabor a casa
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="recetas.html">Recetas</a></li>
+        <li class="nav-item"><a class="nav-link" href="categoria.html">Categorías</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Menú lateral de categorías -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="menuCategorias" aria-labelledby="menuCategoriasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="menuCategoriasLabel">Categorías</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-unstyled">
+      <li><a class="nav-link" href="#">Desayunos</a></li>
+      <li><a class="nav-link" href="#">Almuerzos</a></li>
+      <li><a class="nav-link" href="#">Cenas</a></li>
+      <li><a class="nav-link" href="#">Postres</a></li>
+      <li><a class="nav-link" href="#">Snacks o meriendas</a></li>
+      <li><a class="nav-link" href="#">Bebidas</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Galería de recetas -->
+<section class="container my-5">
+  <h1 class="mb-4 text-center">Todas las recetas</h1>
+  <div class="row g-4">
+
+    <!-- Tarjeta 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/pan.jpg" class="card-img-top" alt="Panqueques" />
+        <div class="card-body">
+          <h5 class="card-title">Panqueques</h5>
+          <p class="card-text">Tiempo: 15 min | Dificultad: Fácil</p>
+          <a href="#" class="btn btn-primary">Ver receta</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/ensa.jpg" class="card-img-top" alt="Ensalada" />
+        <div class="card-body">
+          <h5 class="card-title">Ensalada saludable</h5>
+          <p class="card-text">Tiempo: 10 min | Dificultad: Fácil</p>
+          <a href="#" class="btn btn-primary">Ver receta</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/galleta.jpg" class="card-img-top" alt="Galletas" />
+        <div class="card-body">
+          <h5 class="card-title">Galletas caseras</h5>
+          <p class="card-text">Tiempo: 20 min | Dificultad: Intermedio</p>
+          <a href="#" class="btn btn-primary">Ver receta</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Tarjeta 4 -->
+   <div class="col-md-4">
+      <div class="card">
+        <img src="img/pollo.jpg" class="card-img-top" alt="Galletas" />
+        <div class="card-body">
+          <h5 class="card-title">Pollo empanizado</h5>
+          <p class="card-text">Tiempo: 30 min | Dificultad: Intermedio</p>
+          <a href="#" class="btn btn-primary">Ver receta</a>
+        </div>
+      </div>
+    </div>
+
+ <!-- Tarjeta 5 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/650_1200.jpg" class="card-img-top" alt="Galletas" />
+        <div class="card-body">
+          <h5 class="card-title">Guacamole</h5>
+          <p class="card-text">Tiempo: 20 min | Dificultad: Fácil</p>
+          <a href="#" class="btn btn-primary">Ver receta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Tarjeta 6 -->
+<div class="col-md-4">
+      <div class="card">
+        <img src="img/cordon.jpg" class="card-img-top" alt="Galletas" />
+        <div class="card-body">
+          <h5 class="card-title">Cordon bleu</h5>
+          <p class="card-text">Tiempo: 1 hor | Dificultad: Difícil</p>
+          <a href="#" class="btn btn-primary">Ver receta</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<!-- Pie de página -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Sabor a casa – Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
